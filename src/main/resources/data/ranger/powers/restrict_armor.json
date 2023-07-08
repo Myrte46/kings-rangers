@@ -1,0 +1,33 @@
+{
+    "type": "apoli:restrict_armor",
+    "head": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+            "item": "minecraft:leather_helmet"
+        },
+        "inverted": true
+    },
+    "chest": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+            "item": "minecraft:leather_chestplate"
+        },
+        "inverted": true
+    },
+    "legs": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+            "item": "minecraft:leather_leggings"
+        },
+        "inverted": true
+    },
+    "feet": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+            "item": "minecraft:leather_boots"
+        },
+        "inverted": true
+    },
+    "name": "Light Footed",
+    "description": "You can only wear leather armor, since you need to move fast and unseen."
+}

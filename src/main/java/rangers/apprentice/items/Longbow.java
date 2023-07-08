@@ -49,11 +49,6 @@ public class Longbow extends BowItem {
                             persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double) j * 1 + 1);
                         }
 
-                        int k = EnchantmentHelper.getLevel(Enchantments.PUNCH, stack);
-                        if (k > 0) {
-                            persistentProjectileEntity.setPunch(k);
-                        }
-
                         stack.damage(1, playerEntity, (p) -> {
                             p.sendToolBreakStatus(playerEntity.getActiveHand());
                         });

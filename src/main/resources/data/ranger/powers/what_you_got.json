@@ -1,0 +1,31 @@
+{
+    "type": "apoli:multiple",
+    "no_shield": {
+        "type": "apoli:prevent_item_use",
+        "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+                "item": "minecraft:shield"
+            }
+        }
+    },
+    "no_sword":{
+        "type": "apoli:modify_damage_dealt",
+        "condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                    "tag": "ranger:swords"
+                }
+            }
+        },
+        "modifier": {
+            "value": -1,
+            "operation": "multiply_base"
+        }
+    },
+    "name": "Untrained",
+    "description": "You're not a soldier. You do no damage with a sword and can't use a shield."
+}

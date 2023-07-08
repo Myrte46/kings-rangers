@@ -5,7 +5,11 @@
 		"ranger:two_dozen",
 		"ranger:weapon_crafting",
 		"ranger:double_knife_attack",
-		"ranger:double_knife_defense"
+		"ranger:double_knife_defense",
+		"ranger:strikers",
+		"ranger:what_you_got",
+		"ranger:restrict_armor",
+		"ranger:fantasy"
 	],
 	"icon": "kings-rangers:longbow",
 	"order": 10,

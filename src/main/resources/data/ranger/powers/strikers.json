@@ -1,0 +1,37 @@
+{
+    "type": "apoli:action_on_hit",
+    "bientity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:damage",
+                    "amount": 4,
+                    "source": {
+                        "name": "player"
+                    }
+                }
+            },
+            {
+                "type": "apoli:actor_action",
+                "action": {
+                    "type": "apoli:damage",
+                    "amount": 1,
+                    "source": {
+                        "name": "player"
+                    }
+                }
+            }
+        ]
+    },
+    "condition": {
+        "type": "apoli:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "apoli:empty"
+        }
+    },
+    "name": "Strikers",
+    "description": "When you punch with an empty hand, you deal 2 hearts of damage to your enemy, and half a heart to yourself."
+}

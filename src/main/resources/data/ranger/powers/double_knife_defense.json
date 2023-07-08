@@ -10,7 +10,7 @@
         }
     },
     "condition": {
-        "type": "origins:and",
+        "type": "apoli:and",
         "conditions": [
             {
                 "type": "apoli:equipped_item",
