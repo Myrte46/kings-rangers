@@ -1,0 +1,41 @@
+{
+    "type": "apoli:multiple",
+    "longbow": {
+        "type": "apoli:modify_crafting",
+        "recipe": "minecraft:bow",
+        "result": {
+            "item": "kings-rangers:longbow"
+        }
+    },
+    "saxe": {
+        "type": "apoli:modify_crafting",
+        "recipe": "minecraft:iron_sword",
+        "result": {
+            "item": "kings-rangers:saxe_knife"
+        }
+    },
+    "throw": {
+        "type": "apoli:recipe",
+        "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "id": "kings-rangers:throwing_knife",
+            "result": {
+                "item": "kings-rangers:throwing_knife"
+            },
+            "pattern": [
+                "#",
+                "@"
+            ],
+            "key": {
+                "#": {
+                    "item": "minecraft:iron_ingot"
+                },
+                "@": {
+                    "item": "minecraft:stick"
+                }
+            }
+        }
+    },
+    "name": "Weapon crafting",
+    "description": "You can create your own longbow and saxe knife as you would a bow and iron sword, and your own throwing knife by putting one iron ingot above one stick."
+}

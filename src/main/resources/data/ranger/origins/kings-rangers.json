@@ -1,9 +1,11 @@
 {
 	"powers": [
-		"ranger:bow_spawn",
+		"ranger:kit",
 		"ranger:invisibility",
 		"ranger:two_dozen",
-		"ranger:longbow_crafting"
+		"ranger:weapon_crafting",
+		"ranger:double_knife_attack",
+		"ranger:double_knife_defense"
 	],
 	"icon": "kings-rangers:longbow",
 	"order": 10,

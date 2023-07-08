@@ -1,0 +1,38 @@
+{
+    "type": "apoli:modify_damage_dealt",
+    "self_action": {
+        "type": "apoli:swing_hand",
+        "hand": "OFF_HAND"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "apoli:ingredient",
+                    "ingredient": {
+                        "item": "kings-rangers:saxe_knife"
+                    }
+                }
+            },
+            {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "apoli:ingredient",
+                    "ingredient": {
+                        "item": "kings-rangers:throwing_knife"
+                    }
+                }
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1
+    },
+    "name": "Double knife attack",
+    "description": "With a saxe knife in your main hand and a throwing knife in your offhand, your attack is twice as good as either one."
+}

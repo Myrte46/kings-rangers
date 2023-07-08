@@ -1,0 +1,42 @@
+{
+    "type": "apoli:modify_damage_taken",
+    "target_condition": {
+        "type": "apoli:using_item",
+        "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+                "tag": "ranger:swords"
+            }
+        }
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "apoli:ingredient",
+                    "ingredient": {
+                        "item": "kings-rangers:saxe_knife"
+                    }
+                }
+            },
+            {
+                "type": "apoli:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "apoli:ingredient",
+                    "ingredient": {
+                        "item": "kings-rangers:throwing_knife"
+                    }
+                }
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.75
+    },
+    "hidden": true
+}

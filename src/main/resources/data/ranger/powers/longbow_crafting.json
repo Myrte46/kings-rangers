@@ -1,9 +1,0 @@
-{
-    "type": "origins:modify_crafting",
-    "recipe": "minecraft:bow",
-    "result": {
-        "item": "kings-rangers:longbow"
-    },
-    "name": "Longbow crafting",
-    "description": "You can create your own longbow the same as you would a bow."
-}

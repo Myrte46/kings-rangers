@@ -3,6 +3,7 @@ package rangers.apprentice;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import rangers.apprentice.entities.RangerEntities;
 import rangers.apprentice.items.RangerItems;
 
 public class RangerMod implements ModInitializer {
@@ -14,5 +15,6 @@ public class RangerMod implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing King's Rangers, an Origins addon. Enjoy!");
         RangerItems.registerModItems();
+        RangerEntities.registerModEntities();
     }
 }

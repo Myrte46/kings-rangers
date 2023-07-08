@@ -7,7 +7,7 @@
   "authors": [],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/kings-rangers/icon.png",
+  "icon": "assets/kings-rangers/textures/item/longbow_resting.png",
   "environment": "*",
   "entrypoints": {
     "main": [
