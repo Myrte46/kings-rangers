@@ -1,0 +1,51 @@
+{
+    "type": "apoli:active_self",
+    "name": "Two dozen lives",
+    "description": "If you're holding your longbow, you can fire 24 arrows at once.",
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 2,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "cooldown": 200,
+    "entity_action": {
+        "type": "apoli:modify_inventory",
+        "process_mode": "items",
+        "limit": 24,
+        "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+                "item": "minecraft:arrow"
+            }
+        },
+        "item_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:holder",
+                    "entity_action": {
+                        "type": "apoli:fire_projectile",
+                        "entity_type": "minecraft:arrow",
+                        "tag": "{NoGravity: 1}"
+                    }
+                },
+                {
+                    "type": "apoli:consume"
+                }
+            ]
+        }
+    },
+    "condition": {
+        "type": "apoli:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "apoli:ingredient",
+            "ingredient": {
+                "item": "kings-rangers:longbow"
+            }
+        }
+    }
+}

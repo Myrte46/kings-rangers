@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ranger:bow_spawn",
+		"ranger:invisibility",
+		"ranger:two_dozen",
+		"ranger:longbow_crafting"
+	],
+	"icon": "kings-rangers:longbow",
+	"order": 10,
+	"impact": 0,
+	"name": "King's Ranger",
+	"description": "You are a master of stealth, archery, and horseback riding."
+}

@@ -1,0 +1,51 @@
+{
+    "type": "apoli:multiple",
+    "name": "Unseen Movement",
+    "description": "Thank to your cloak and training, you're invisibile when standing sneaking, and transparent when moving.",
+    "toggle": {
+        "type": "apoli:toggle",
+        "active_by_default": true,
+        "key": "key.origins.secondary_active"
+    },
+    "standing": {
+        "type": "apoli:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "apoli:and",
+            "conditions": [
+                {
+                    "type": "apoli:moving",
+                    "inverted": true
+                },
+                {
+                    "type": "apoli:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        }
+    },
+    "walking": {
+        "type": "apoli:model_color",
+        "alpha": 0.3,
+        "condition": {
+            "type": "apoli:and",
+            "conditions": [
+                {
+                    "type": "apoli:moving"
+                },
+                {
+                    "type": "apoli:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "apoli:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        }
+    },
+    "silence":{
+        "type": "apoli:prevent_game_event",
+        "event": "minecraft:step"
+    }
+}

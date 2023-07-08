@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "kings-rangers",
+  "version": "${version}",
+  "name": "King's Rangers",
+  "description": "Based on the Range's Apprentice books, this origin addon sets out to recreate the King's Rangers.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kings-rangers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "rangers.apprentice.RangerMod"
+    ],
+    "client": [
+      "rangers.apprentice.RangerClientMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

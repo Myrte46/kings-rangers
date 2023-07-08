@@ -1,0 +1,6 @@
+{
+  "parent": "kings-rangers:item/longbow",
+  "textures": {
+    "layer0": "kings-rangers:item/longbow_draw3"
+  }
+}
