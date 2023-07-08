@@ -1,0 +1,14 @@
+{
+	"type": "apoli:starting_equipment",
+	"name": "Standard Kit",
+	"description": "You spawn with a standard kit of a longbow, 24 arrows, a saxe knife, and a throwing knife.",
+	"stacks": [
+		{
+			"item": "kings-rangers:longbow"
+		},
+		{
+			"item": "minecraft:arrow",
+			"amount": 24
+		}
+	]
+}
